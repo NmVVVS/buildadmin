@@ -188,6 +188,7 @@ declare global {
             multiple?: boolean
             remoteUrl: string
         }
+        comSearchProp?: string;
     }
 
     /* 表格右侧操作按钮 */

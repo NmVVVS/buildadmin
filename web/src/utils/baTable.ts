@@ -486,7 +486,7 @@ export default class baTable {
             if (field[key].operator === false) {
                 continue
             }
-            const prop = field[key].prop
+            const prop = field[key].comSearchProp ?? field[key].prop;
             if (typeof field[key].operator == 'undefined') {
                 field[key].operator = '='
             }

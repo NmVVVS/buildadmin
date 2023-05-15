@@ -76,7 +76,7 @@
                                         <BaInput
                                             v-else-if="item.comSearchRender == 'remoteSelect'"
                                             type="remoteSelect"
-                                            v-model="baTable.comSearch.form[item.prop!]"
+                                            v-model="baTable.comSearch.form[item.comSearchProp??item.prop]"
                                             :attr="item.remote"
                                             :placeholder="item.operatorPlaceholder"
                                         />
